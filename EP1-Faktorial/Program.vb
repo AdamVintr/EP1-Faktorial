@@ -15,8 +15,16 @@ Module Program
                             soucet = soucet + i
                         Next
                         Console.WriteLine($"Souèet 1 do {cislo} je {soucet}")
+                    Else
+                        Console.WriteLine("Chyba musíte zadat jen celá èísla ")
 
                     End If
+                Else
+                    Console.WriteLine("Zadali jste moc velkou hodnotu.")
+                End If
+            Else
+                Console.WriteLine("Nelze poèítat se zápornými èísly")
+            End If
         Loop
     End Sub
 End Module
